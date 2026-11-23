@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARISH | Aspiring Full Stack Python Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Harish - Aspiring Full Stack Python Developer skilled in Python, Django, PostgreSQL, MySQL, JavaScript, and responsive UI design.">
+  <meta name="theme-color" content="#070b14">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Animated Gradient Mesh & Tech Grid -->
+  <div class="bg-mesh">
+    <div class="mesh-blob blob-1"></div>
+    <div class="mesh-blob blob-2"></div>
+    <div class="mesh-blob blob-3"></div>
+  </div>
+  <div class="bg-grid"></div>
+
+  <!-- ==============================================================================
+       HEADER / NAVBAR
+       ============================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-badge">H</span>
+        <span>HARISH<span class="gradient-text">.dev</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#objective" class="nav-link">Objective</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button -->
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#contact" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Let's Connect</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==============================================================================
+         1. HERO SECTION (3D CUBE ON LEFT + CAREER OBJECTIVE ON RIGHT)
+         ============================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- LEFT COLUMN: 3D ROTATING CUBE (360-DEGREE CONTINUOUS ANIMATION) -->
+          <div class="hero-cube-col">
+            <div class="cube-wrapper" id="cubeWrapper" title="Interactive 3D Tech Cube - Drag to rotate">
+              <div class="cube" id="cube3D">
+                <!-- Front Face: Python -->
+                <div class="cube-face face-front">
+                  <i class="fa-brands fa-python"></i>
+                  <span>PYTHON 3</span>
+                  <div class="face-subtitle">Core & Backend OOP</div>
+                </div>
+
+                <!-- Back Face: Django -->
+                <div class="cube-face face-back">
+                  <i class="fa-solid fa-server"></i>
+                  <span>DJANGO</span>
+                  <div class="face-subtitle">Web Framework & ORM</div>
+                </div>
+
+                <!-- Right Face: PostgreSQL -->
+                <div class="cube-face face-right">
+                  <i class="fa-solid fa-database"></i>
+                  <span>POSTGRESQL</span>
+                  <div class="face-subtitle">Relational Database</div>
+                </div>
+
+                <!-- Left Face: JavaScript -->
+                <div class="cube-face face-left">
+                  <i class="fa-brands fa-js"></i>
+                  <span>JAVASCRIPT</span>
+                  <div class="face-subtitle">Modern ES6+ UI</div>
+                </div>
+
+                <!-- Top Face: Git & GitHub -->
+                <div class="cube-face face-top">
+                  <i class="fa-brands fa-git-alt"></i>
+                  <span>GIT / GITHUB</span>
+                  <div class="face-subtitle">Version Control</div>
+                </div>
+
+                <!-- Bottom Face: Full Stack -->
+                <div class="cube-face face-bottom">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <span>FULL STACK</span>
+                  <div class="face-subtitle">End-to-End Solutions</div>
+                </div>
+              </div>
+
+              <!-- Holographic Ground Glow -->
+              <div class="cube-ground-glow"></div>
+            </div>
+
+            <!-- Cube Hint / Interaction Indicator -->
+            <div class="cube-hint">
+              <i class="fa-solid fa-arrows-spin"></i>
+              <span>360° Continuous CSS 3D Rotation • Drag to Inspect</span>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: INTRO & CAREER OBJECTIVE -->
+          <div class="hero-content-col">
+            <!-- Active Status Badge -->
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Available for Full Stack Opportunities</span>
+            </div>
+
+            <!-- Name Title -->
+            <h1 class="hero-name">
+              Hi, I'm <span class="gradient-text">HARISH</span>
+            </h1>
+
+            <!-- Animated Typing Role -->
+            <div class="hero-role-wrapper">
+              <span id="typing-text">Aspiring Full Stack Python Developer</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <!-- Career Objective Highlight Box (Specified in Requirements) -->
+            <div class="objective-glass-box">
+              <div class="objective-tag">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Career Objective</span>
+              </div>
+              <p class="objective-text">
+                "Aspiring Full Stack Python Developer with hands-on experience in building responsive web applications. Skilled in <strong>Python, Django, MySQL, JavaScript, HTML, CSS, and PostgreSQL</strong>. Passionate about scalable backend development and clean UI design. Ready to contribute to real-time projects with strong problem-solving skills."
+              </p>
+            </div>
+
+            <!-- Quick Contact Pills with One-Click Copy -->
+            <div class="hero-contact-pills">
+              <div class="contact-pill" data-copy="Cuddalore, India" title="Click to copy location">
+                <i class="fa-solid fa-location-dot" style="color: var(--cyan);"></i>
+                <span>Cuddalore, India</span>
+              </div>
+
+              <div class="contact-pill" data-copy="8056453340" title="Click to copy phone">
+                <i class="fa-solid fa-phone" style="color: #34d399;"></i>
+                <span>+91 8056453340</span>
+              </div>
+
+              <div class="contact-pill" data-copy="harish2005917@gmail.com" title="Click to copy email">
+                <i class="fa-solid fa-envelope" style="color: #f59e0b;"></i>
+                <span>harish2005917@gmail.com</span>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="hero-buttons">
+              <a href="#projects" class="btn-primary-glow">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Explore Projects</span>
+              </a>
+              <a href="#contact" class="btn-outline-glass">
+                <i class="fa-solid fa-comments"></i>
+                <span>Get in Touch</span>
+              </a>
+              <a href="https://www.linkedin.com/in/harish-p-08a0692a5" target="_blank" rel="noopener noreferrer" class="btn-outline-glass">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         2. ABOUT ME SECTION
+         ============================================================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-user-astronaut"></i>
+            <span>Who I Am</span>
+          </div>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Dedicated Full Stack Python fresher with strong foundational principles, problem-solving mindset, and love for creating responsive web experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Bio Card -->
+          <div class="glass-card about-card">
+            <div class="about-bio">
+              <p>
+                Hello! I am <strong>Harish</strong>, a proactive and dedicated computer science graduate specializing in <strong>Full Stack Python Web Development</strong>. I graduated with a Bachelor of Computer Application (BCA) from <em>St. Joseph’s College of Arts & Science</em> in Cuddalore.
+              </p>
+              <p>
+                My passion lies at the intersection of robust backend engineering and intuitive frontend interfaces. I specialize in building end-to-end web applications with <strong>Python and Django</strong>, modeling relational databases with <strong>PostgreSQL and MySQL</strong>, and crafting smooth, interactive interfaces with <strong>JavaScript, HTML5, and CSS3</strong>.
+              </p>
+              <p>
+                With hands-on experience developing real-world projects such as speech recognition enquiry systems and event booking platforms, I am eager to contribute my skills to high-impact development teams.
+              </p>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="about-highlights-grid">
+              <div class="highlight-box">
+                <i class="fa-solid fa-code"></i>
+                <h5>Backend Architecture</h5>
+                <p>Clean MVC/MVT architecture, secure ORM operations, and modular Python coding.</p>
+              </div>
+
+              <div class="highlight-box">
+                <i class="fa-solid fa-database"></i>
+                <h5>Database Design</h5>
+                <p>PostgreSQL & MySQL schema design, relational integrity, and fast queries.</p>
+              </div>
+
+              <div class="highlight-box">
+                <i class="fa-solid fa-palette"></i>
+                <h5>Modern UI / UX</h5>
+                <p>Pixel-perfect responsive design, glassmorphism, flexbox/grid, and micro-interactions.</p>
+              </div>
+
+              <div class="highlight-box">
+                <i class="fa-solid fa-brain"></i>
+                <h5>Analytical Mindset</h5>
+                <p>Strong problem-solving capability, continuous learning, and teamwork agility.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Stats Column -->
+          <div class="stats-cards-col">
+            <div class="glass-card stat-metric-card">
+              <div class="stat-number" data-target="3" data-suffix="+">0</div>
+              <div class="stat-label">Full Stack Projects Built</div>
+            </div>
+
+            <div class="glass-card stat-metric-card">
+              <div class="stat-number" data-target="100" data-suffix="%">0</div>
+              <div class="stat-label">Commitment & Passion</div>
+            </div>
+
+            <div class="glass-card stat-metric-card">
+              <div class="stat-number" data-target="8" data-suffix="+">0</div>
+              <div class="stat-label">Core Technologies Mastered</div>
+            </div>
+
+            <div class="glass-card stat-metric-card">
+              <div class="stat-number" data-target="2025" data-suffix="">2025</div>
+              <div class="stat-label">BCA Graduation Year</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         3. CAREER OBJECTIVE SECTION (DEDICATED SECTION)
+         ============================================================================== -->
+    <section id="objective" style="background: rgba(10, 16, 29, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-compass"></i>
+            <span>Vision & Goal</span>
+          </div>
+          <h2 class="section-title">Career <span class="gradient-text">Objective</span></h2>
+          <p class="section-subtitle">A clear vision of my professional journey, future goals, and readiness to deliver value in production engineering.</p>
+        </div>
+
+        <div class="glass-card" style="padding: 3rem; max-width: 960px; margin: 0 auto; border-left: 5px solid var(--cyan);">
+          <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+            <div style="width: 60px; height: 60px; border-radius: 16px; background: rgba(0, 242, 254, 0.12); border: 1.5px solid rgba(0, 242, 254, 0.35); display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: var(--cyan); flex-shrink: 0;">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <div style="flex: 1; min-width: 280px;">
+              <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-white);">
+                Driven to Build Scalable, Real-Time Software Solutions
+              </h3>
+              <p style="font-size: 1.12rem; line-height: 1.8; color: var(--text-primary); margin-bottom: 1.5rem;">
+                "Aspiring Full Stack Python Developer with hands-on experience in building responsive web applications. Skilled in Python, Django, MySQL, JavaScript, HTML, CSS, and PostgreSQL. Passionate about scalable backend development and clean UI design. Ready to contribute to real-time projects with strong problem-solving skills."
+              </p>
+              
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.5rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="fa-solid fa-circle-check" style="color: var(--cyan);"></i>
+                  <span style="font-size: 0.92rem; font-weight: 500;">Real-Time Project Readiness</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="fa-solid fa-circle-check" style="color: #34d399;"></i>
+                  <span style="font-size: 0.92rem; font-weight: 500;">Scalable Backend Focus</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="fa-solid fa-circle-check" style="color: #a855f7;"></i>
+                  <span style="font-size: 0.92rem; font-weight: 500;">Clean & Maintainable Code</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         4. TECHNICAL SKILLS SECTION
+         ============================================================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Capabilities</span>
+          </div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Proficiencies acquired through coursework, certifications, and hands-on project implementations.</p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Category 1: Languages & Backend -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <div>
+                <h4>Languages & Backend</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Core programming and application frameworks</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Python -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-python"></i> Python (OOP & Core)</span>
+                  <span class="skill-level-text">Advanced Fresher (90%)</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="90%"></div>
+                </div>
+              </div>
+
+              <!-- Django -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-server"></i> Django Framework (MVT & ORM)</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="85%"></div>
+                </div>
+              </div>
+
+              <!-- REST APIs -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-network-wired"></i> RESTful API Architecture</span>
+                  <span class="skill-level-text">80%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Databases -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon" style="color: #60a5fa; border-color: rgba(96, 165, 250, 0.3); background: rgba(96, 165, 250, 0.1);">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <div>
+                <h4>Databases & Storage</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Relational data modeling, schema, & queries</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- PostgreSQL -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-database" style="color: #60a5fa;"></i> PostgreSQL</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="85%" style="background: linear-gradient(90deg, #60a5fa, #3b82f6);"></div>
+                </div>
+              </div>
+
+              <!-- MySQL -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-server" style="color: #f59e0b;"></i> MySQL</span>
+                  <span class="skill-level-text">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="85%" style="background: linear-gradient(90deg, #f59e0b, #d97706);"></div>
+                </div>
+              </div>
+
+              <!-- SQL Querying & Optimization -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-table"></i> Relational Queries & Constraints</span>
+                  <span class="skill-level-text">82%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="82%" style="background: linear-gradient(90deg, #10b981, #059669);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend Technologies -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon" style="color: #facc15; border-color: rgba(250, 204, 21, 0.3); background: rgba(250, 204, 21, 0.1);">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div>
+                <h4>Frontend Technologies</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Interactive, accessible & responsive web interfaces</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- JavaScript -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-js" style="color: #facc15;"></i> JavaScript (ES6+, DOM, Fetch)</span>
+                  <span class="skill-level-text">82%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="82%" style="background: linear-gradient(90deg, #facc15, #eab308);"></div>
+                </div>
+              </div>
+
+              <!-- HTML5 & CSS3 -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-html5" style="color: #f97316;"></i> HTML5 & CSS3 (Flexbox/Grid/3D)</span>
+                  <span class="skill-level-text">92%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="92%" style="background: linear-gradient(90deg, #f97316, #ea580c);"></div>
+                </div>
+              </div>
+
+              <!-- Bootstrap -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-bootstrap" style="color: #a855f7;"></i> Bootstrap 5</span>
+                  <span class="skill-level-text">88%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="88%" style="background: linear-gradient(90deg, #a855f7, #9333ea);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Tools & Version Control -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-category-header">
+              <div class="skill-cat-icon" style="color: #34d399; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.1);">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+              </div>
+              <div>
+                <h4>Tools & Workflow</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">Development environment and version control</p>
+              </div>
+            </div>
+
+            <div class="skill-items-list">
+              <!-- Git & GitHub -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt" style="color: #f97316;"></i> Git & GitHub</span>
+                  <span class="skill-level-text">88%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="88%" style="background: linear-gradient(90deg, #34d399, #10b981);"></div>
+                </div>
+              </div>
+
+              <!-- VS Code -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-code" style="color: #38bdf8;"></i> Visual Studio Code</span>
+                  <span class="skill-level-text">95%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="95%" style="background: linear-gradient(90deg, #38bdf8, #0284c7);"></div>
+                </div>
+              </div>
+
+              <!-- Problem Solving -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name"><i class="fa-solid fa-lightbulb" style="color: #fbbf24;"></i> Problem Solving & Team Collaboration</span>
+                  <span class="skill-level-text">90%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-fill" data-width="90%" style="background: linear-gradient(90deg, #fbbf24, #f59e0b);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         5. FEATURED PROJECTS SECTION
+         ============================================================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Real-World Work</span>
+          </div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications showcasing full stack development, database modeling, and interactive interfaces.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: College Enquiry System Using Voice Recognition (FROM RESUME) -->
+          <div class="glass-card project-card">
+            <div class="project-badge-top">
+              <div class="project-icon-box">
+                <i class="fa-solid fa-microphone-lines"></i>
+              </div>
+              <span class="project-category-tag">Speech & AI Assistive</span>
+            </div>
+
+            <h3 class="project-title">College Enquiry System Using Voice Recognition</h3>
+            <p class="project-description">
+              Developed an interactive voice-assisted query answering system capable of interpreting user spoken inquiries and delivering real-time spoken and visual responses regarding admissions, academic departments, courses, and fee structures.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Automated voice-to-text audio processing using Python speech libraries.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>SQL database integration to retrieve real-time college records.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Interactive query matching reducing manual student enquiry bottlenecks.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Speech Recognition</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Machine Learning Basics</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Flower Decoration Booking Web Application (FROM RESUME) -->
+          <div class="glass-card project-card">
+            <div class="project-badge-top">
+              <div class="project-icon-box" style="color: #f43f5e; border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.1);">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+              <span class="project-category-tag" style="color: #f43f5e; border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.1);">Web Application</span>
+            </div>
+
+            <h3 class="project-title">Flower Decoration Booking Web Application</h3>
+            <p class="project-description">
+              Designed and deployed an end-to-end event decoration reservation platform allowing customers to browse decorative themes, verify date availability, customize floral designs, and submit reservations online.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Relational PostgreSQL database schema for event packages and booking dates.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>User-friendly customer booking flow with date selection & input validations.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Admin management for package pricing, bookings, and customer statuses.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: TurfCricket - Cricket Turf Slot Booking & Management System (FLAGSHIP) -->
+          <div class="glass-card project-card">
+            <div class="project-badge-top">
+              <div class="project-icon-box" style="color: #34d399; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.1);">
+                <i class="fa-solid fa-baseball-bat-ball"></i>
+              </div>
+              <span class="project-category-tag" style="color: #34d399; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.1);">Flagship Full Stack</span>
+            </div>
+
+            <h3 class="project-title">TurfCricket - Cricket Turf Slot Booking System</h3>
+            <p class="project-description">
+              Engineered a high-performance sports turf reservation platform featuring real-time slot checking, selectable interactive payment method cards, live price estimation, and clean single-page printable booking confirmation receipts.
+            </p>
+
+            <ul class="project-highlights-list">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Dynamic time-slot availability engine preventing double-booking.</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Interactive selectable payment cards (UPI/QR, Net Banking, Cards, Venue).</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Clean single-page print stylesheet for instant thermal/PDF receipt printing.</span>
+              </li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python 3.12</span>
+              <span class="tech-tag">Django 5</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Glassmorphism UI</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         6. EDUCATION & CERTIFICATIONS SECTION
+         ============================================================================== -->
+    <section id="education" style="background: rgba(10, 16, 29, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Background</span>
+          </div>
+          <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">Academic foundations and professional skill training backing up my development abilities.</p>
+        </div>
+
+        <div class="edu-cert-grid">
+          <!-- Left: Education Timeline -->
+          <div>
+            <h4 style="font-size: 1.35rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+              <i class="fa-solid fa-school" style="color: var(--cyan);"></i>
+              <span>Academic Education</span>
+            </h4>
+
+            <div class="timeline-list">
+              <div class="glass-card timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-period">2022 – 2025</div>
+                <h5 class="timeline-degree">Bachelor of Computer Application (BCA)</h5>
+                <div class="timeline-institution">St. Joseph’s College of Arts & Science (Autonomous), Cuddalore</div>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                  Built strong core foundations in Programming Paradigms, Data Structures, Object-Oriented Programming, Database Management Systems (DBMS), and Web Engineering.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Certifications -->
+          <div>
+            <h4 style="font-size: 1.35rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+              <i class="fa-solid fa-award" style="color: var(--purple);"></i>
+              <span>Professional Certifications</span>
+            </h4>
+
+            <div class="cert-cards-list">
+              <!-- Cert 1: NASSCOM -->
+              <div class="glass-card cert-card">
+                <div class="cert-icon-wrapper">
+                  <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div class="cert-info">
+                  <h5>Digital 101 Journey</h5>
+                  <div class="cert-issuer">NASSCOM</div>
+                  <span class="cert-status-badge">Certified</span>
+                  <p style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 0.4rem;">
+                    Completed comprehensive training in fundamental digital technologies, emerging technical landscapes, and agile industry workflows.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Cert 2: Code IT99 Academy -->
+              <div class="glass-card cert-card">
+                <div class="cert-icon-wrapper" style="color: var(--cyan); border-color: rgba(0, 242, 254, 0.3); background: rgba(0, 242, 254, 0.1);">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="cert-info">
+                  <h5>Full Stack Python Development</h5>
+                  <div class="cert-issuer">Code IT99 Academy</div>
+                  <span class="cert-status-badge" style="color: #34d399; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.1);">Ongoing / Active</span>
+                  <p style="font-size: 0.84rem; color: var(--text-secondary); margin-top: 0.4rem;">
+                    In-depth hands-on development covering Python OOP, Django, PostgreSQL, MySQL database design, REST APIs, and full stack deployment.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================================
+         7. CONTACT SECTION
+         ============================================================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <span>Get In Touch</span>
+          </div>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Interested in collaborating or hiring? Reach out directly via phone, email, or LinkedIn!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Info Cards -->
+          <div class="contact-info-cards">
+            <!-- Email -->
+            <div class="glass-card contact-card-item" data-copy="harish2005917@gmail.com" title="Click to copy email address">
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h6>Email Address</h6>
+                <p>harish2005917@gmail.com</p>
+              </div>
+              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copy</span>
+            </div>
+
+            <!-- Phone -->
+            <div class="glass-card contact-card-item" data-copy="8056453340" title="Click to copy phone number">
+              <div class="contact-icon" style="color: #34d399; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.1);">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h6>Phone Number</h6>
+                <p>+91 8056453340</p>
+              </div>
+              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copy</span>
+            </div>
+
+            <!-- Location -->
+            <div class="glass-card contact-card-item" data-copy="Cuddalore, Tamil Nadu, India" title="Click to copy location">
+              <div class="contact-icon" style="color: #f59e0b; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.1);">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-details">
+                <h6>Location</h6>
+                <p>Cuddalore, Tamil Nadu, India</p>
+              </div>
+              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copy</span>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/harish-p-08a0692a5" target="_blank" rel="noopener noreferrer" class="glass-card contact-card-item" style="text-decoration: none;">
+              <div class="contact-icon" style="color: #60a5fa; border-color: rgba(96, 165, 250, 0.3); background: rgba(96, 165, 250, 0.1);">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-details">
+                <h6>LinkedIn Profile</h6>
+                <p>harish-p-08a0692a5</p>
+              </div>
+              <span class="copy-badge" style="color: #60a5fa; border-color: rgba(96, 165, 250, 0.3);"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open</span>
+            </a>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="glass-card contact-form-card">
+            <h4 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Send a Direct Message</h4>
+            <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.75rem;">
+              Leave a note for job opportunities, projects, or questions. I will respond promptly.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="formName" class="form-label">Your Name</label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. Alex Smith" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formEmail" class="form-label">Your Email</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="formMessage" class="form-label">Message</label>
+                <textarea id="formMessage" class="form-textarea" placeholder="Hello Harish, I would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary-glow" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==============================================================================
+       FOOTER
+       ============================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="nav-logo">
+          <span class="logo-badge">H</span>
+          <span>HARISH<span class="gradient-text">.dev</span></span>
+        </a>
+
+        <div class="footer-social-links">
+          <a href="https://www.linkedin.com/in/harish-p-08a0692a5" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:harish2005917@gmail.com" class="social-btn" aria-label="Send Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:+918056453340" class="social-btn" aria-label="Call Harish">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Harish P. Crafted with precision using Python, HTML5, CSS3 3D transforms, & modern JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Popup -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fa-solid fa-circle-check" style="color: var(--cyan); font-size: 1.2rem;"></i>
+    <span id="toastMsg">Copied to clipboard!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
